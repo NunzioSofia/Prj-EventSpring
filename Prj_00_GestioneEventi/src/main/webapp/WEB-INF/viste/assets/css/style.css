@@ -1,0 +1,433 @@
+
+body {
+	font-family: Helvetica;
+    background-image: linear-gradient(to top right, #FFFFFF 0%, #C9CACC 50%, #6B6E77 100%);
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+a{
+	color: #8762D1;
+}
+
+a:hover{
+	color: #8762D1;
+} 
+
+
+/*index*/
+
+.carousel-item {
+    height: 450px;
+    text-shadow: 2px 2px black;
+
+}
+
+.carousel-caption {
+	 color:white !important;
+	 font-weight:bold;
+}
+
+
+
+
+/*nav*/
+
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* nav stroke */
+nav.stroke ul li a{
+  position: relative;
+}
+nav.stroke ul li a:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+
+/*evento*/
+.sdhjumbotron {
+   background-image: url("https://images.unsplash.com/photo-1501963917309-56546c33e19d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80");
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+   color:white;
+}
+
+
+/* loginForm */
+   .login-form {
+       width: 500px;
+       margin: 250px auto;
+       
+   }
+   .login-form form {
+       margin-bottom: 15px;
+       background: #f7f7f7;
+       box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.5);
+       padding: 30px;
+       border-radius: 10px;
+   }
+   .login-form h2 {
+       margin: 0 0 25px;
+   }
+   .form-control, .btn {
+       min-height: 38px;
+       border-radius: 20px;
+   }
+   .btn {        
+       font-size: 15px;
+       font-weight: bold;
+       color: white;
+     
+   }
+   
+
+   /* errore */
+   * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  } 
+
+  
+  #notfound {
+    position: relative;
+    height: 100vh;
+  }
+  
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .notfound {
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+  .notfound .notfound-404 {
+    position: relative;
+    height: 500px;
+    margin: 0px auto 20px;
+    z-index: -1;
+  }
+  
+  .notfound .notfound-404 h1 {
+    font-size: 236px;
+    font-weight: 200;
+    margin: 0px;
+    color: #211b19;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  .notfound .notfound-404 h2 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #211b19;
+    background:none;
+    padding: 10px 5px;
+    margin: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+  }
+  
+.btn {
+   flex: 1 1 auto;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+ }
+
+.btn:hover {
+  background-position: right center; 
+  text-decoration:none;
+}
+
+.btn-1 {
+	background-image: linear-gradient(to right, #8762D1 0%, #9FA1A6 51%, #8762D1 100%);
+}
+
+
+
+.modificaBtn {
+	flex: 1 1 auto;
+	background:#8762D1;
+	background-size: 200% auto;
+	margin-top:10px;
+	color:white;
+	padding: 15px 20px;
+}
+
+
+  @media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h1 {
+      font-size: 148px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .notfound .notfound-404 {
+      height: 148px;
+      margin: 0px auto 10px;
+    }
+    .notfound .notfound-404 h1 {
+      font-size: 86px;
+    }
+    .notfound .notfound-404 h2 {
+      font-size: 16px;
+    }
+    .notfound a {
+      padding: 7px 15px;
+      font-size: 14px;
+    }
+  }
+
+  /*inserisci e view*/
+  input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+
+.container-contact2 {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  
+}
+
+.wrap-contact2 {
+    width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 72px 55px 90px 55px;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.5);
+    
+  }
+
+
+.contact2-form {
+  width: 100%;
+}
+
+.contact2-form-title {
+  display: block;
+  font-size: 39px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.wrap-input2 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin-bottom: 37px;
+}
+
+.input2 {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.2;
+}
+
+.focus-input2 {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+.focus-input2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #8762D1;
+}
+
+.focus-input2::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 13px;
+  color: #999999;
+  line-height: 1.2;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+input.input2 {
+  height: 45px;
+}
+
+input.input2 + .focus-input2::after {
+  top: -5px;
+  left: 0px;
+}
+
+textarea.input2 {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+textarea.input2 + .focus-input2::after {
+  top: -5px;
+  left: 0;
+}
+
+.input2:focus + .focus-input2::after {
+  top: -13px;
+}
+
+.input2:focus + .focus-input2::before {
+  width: 100%;
+}
+
+.has-val.input2 + .focus-input2::after {
+  top: -13px;
+}
+
+.has-val.input2 + .focus-input2::before {
+  width: 100%;
+}
+
+
+
+
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+	background: #fff;
+    color:grey;
+    border: 1px solid grey; 
+    border-radius: 30px;
+    display:inline-block;
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+input.button-edit {
+     background-image: url("https://img.icons8.com/nolan/50/edit--v1.png");
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 50px;           /* make this the size of your image */
+    padding-left: 50px;     /* make text start to the right of the image */
+    vertical-align: middle;
+}
+
+.button-delete {
+     background-image: url("https://img.icons8.com/nolan/50/cancel.png");
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 50px;           /* make this the size of your image */
+    padding-left: 50px;     /* make text start to the right of the image */
+    vertical-align: middle;
+} 
